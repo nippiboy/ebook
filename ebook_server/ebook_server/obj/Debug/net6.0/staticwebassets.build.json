@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "dn954XJWfucbL/ju5fkiZGeJ8haOPCG9Gvew49+MM4U=",
+  "Source": "ebook_server",
+  "BasePath": "_content/ebook_server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
