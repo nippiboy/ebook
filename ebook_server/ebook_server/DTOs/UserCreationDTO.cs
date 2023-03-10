@@ -1,4 +1,5 @@
-﻿namespace ebook_server.DTOs
+﻿
+namespace ebook_server.DTOs
 {
     public class UserCreationDTO
     {

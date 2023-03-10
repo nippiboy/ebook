@@ -15,6 +15,11 @@
         },
         "runtime": {
           "ebook_server.dll": {}
+        },
+        "resources": {
+          "en/ebook_server.resources.dll": {
+            "locale": "en"
+          }
         }
       },
       "Azure.Core/1.24.0": {

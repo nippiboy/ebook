@@ -7,7 +7,6 @@ namespace ebook_server.Helper
     {
         public UserDTO ConvertUserToUserDTO(User user)
         {
-            if (user == null) return null;
             return new UserDTO {UserName = user.UserName, UserEmail = user.UserEmail, CreditAmout = user.CreditAmount };
         }
 
@@ -18,7 +17,9 @@ namespace ebook_server.Helper
 
         public User ConvertUserCreationDToTOUser(UserCreationDTO userCreationDTO)
         {
-            return new User { UserName = userCreationDTO.userName, UserEmail = userCreationDTO.email, CreditAmount = 0, UserPassword = userCreationDTO.password };
+            User user = new User { UserName = userCreationDTO.userName, UserEmail = userCreationDTO.email, CreditAmount = 0, UserPassword = userCreationDTO.password };
+            user.GenereateHashPassword();
+            return user;
         }
 
     }
